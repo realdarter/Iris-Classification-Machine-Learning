@@ -27,7 +27,7 @@ def evaluate_classifier_performance_5_fold(X, y):
     # Define models to evaluate
     models = {
         "Naive Bayes": GaussianNB(),
-        "Support Vector Machine": SVC(probability=True),  # Enable probability for ROC AUC
+        "Support Vector Machine": SVC(probability=True),  # enable probability for ROC AUC
         "Random Forest": RandomForestClassifier(random_state=None),
         "XGBoost": xgb.XGBClassifier(use_label_encoder=False, eval_metric='logloss'),
         "K-Nearest Neighbors": KNeighborsClassifier()
